@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Roboto;
+      background: #ED1F24;
+    }
+
+    .raster div {
+      background: #ED1F24;
+      border: 0px #000 solid;
+      text-align: left;
+      font-size: 1.2em;
+    }
+
+
+
+    .raster {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+      padding: 8%;
+    }
+
+    .drei {
+      grid-area: 1 / 3 / 2 / 5
+    }
+
+    .acht {
+      grid-area: 3 / 1 / 4 / 5
+    }
+
+    .neun {
+      grid-area: 4 / 1 / 5 / 3
+    }
+
+    .zehn {
+      grid-area: 4 / 3 / 5 / 5
+    }
+
+    .elf {
+      grid-area: 5 / 1 / 6 / 5
+    }
+
+    .zwolf {
+      grid-area: 6 / 1 / 7 / 3
+    }
+
+    .drizeh {
+      grid-area: 6 / 3 / 7 / 5
+    }
+
+    .niggli {
+
+    }
+
+
+    .titel {
+      font-size: 5em;
+      font-weight: bold;
+    }
+
+    p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+
+  </style>
+  <title>Gridlayout</title>
+</head>
+<body>
+<div class="raster">
+  <div class="eins"></div>
+  <div></div>
+  <div class="drei">Josef Müller-Brockmann</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="acht"><p class="titel">Grid systems</p></div>
+  <div class="neun">in graphic design</div>
+  <div class="zehn">A visual communication manual for graphic designers, typographers and three dimensional designers</div>
+  <div class="elf"><p class="titel">Raster Systeme</p></div>
+  <div class="zwolf">für die visuelle Gestaltung</div>
+  <div class="drizeh">Ein Handbuch für Grafiker, Typografen und Ausstellungsgestalter</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="niggli">Niggli</div>
+  <div></div>
+
+
+</div>
+</body>
+</html>

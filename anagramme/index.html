@@ -3,15 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto">
   <style>
     * {
       box-sizing: border-box;
     }
 
     body {
-      font-family: Roboto;
+      font-family: Gilroy;
       background: #0bd9a9;
       font-weight: 900;
     }
@@ -19,16 +17,16 @@
     .raster div {
       border: 0px #000 solid;
       text-align: left;
-      font-size: 2rem;
+      font-size: 5em;
     }
 
 
 
     .raster {
       display: grid;
-      grid-template-columns:  1fr;
+      grid-template-columns: repeat(4, 1fr);
       grid-auto-flow: clumns;
-      padding: 15%;
+      padding: 10%;
     }
 
 
@@ -44,10 +42,6 @@
     margin-inline-end: 0px;
 }
 
-h1 {
-  font-size: 5rem;
-}
-
 @media screen and (max-width: 48em){
 body{
 background-color: black;
@@ -55,7 +49,21 @@ color: #0bd9a9;
 
 }
 
+.b {
+  order:-1;
+}
 
+.i {
+  order:1;
+}
+
+.e {
+  order:2;
+}
+
+.r {
+  order:3;
+}
 }
 
 
@@ -67,10 +75,10 @@ color: #0bd9a9;
 </head>
 <body>
 <div class="raster">
-  <div class="b"> <h1>Grids and Modules</h1></div>
-  <div class="link"><a href="/aufgabe/index.html">I'M UPSET</a></div>
-  <div class="link"><a href="/anagramme/index.html">I'M UPSET</a></div>
-  <div class="link"><a href="/upset/index.html">I'M UPSET</a></div>
+  <div class="b">B</div>
+  <div class="r">R</div>
+  <div class="e">E</div>
+  <div class="i">I</div>
 
 
 

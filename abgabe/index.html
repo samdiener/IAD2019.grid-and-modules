@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Roboto;
+      font-weight: 300;
+      background: #fff;
+    }
+
+
+    .raster-text {
+      display: grid;
+      grid-template-columns: 1fr minmax(50ch, 70ch) 1fr;
+      grid-auto-flow: clumns;
+      width: auto;
+      margin: auto;
+      padding: 2vw 4vh;
+    }
+
+    .raster-text div {
+      border: 1px #fff solid;
+      text-align: left;
+      font-size: 1.2rem;
+      line-height: 1.9rem;
+      color: #333;
+    }
+
+    .titel {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-auto-flow: clumns;
+      width: auto;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      height: 20rem;
+      font-weight: 900;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+      color: #F6F6F6;
+      align-items: center;
+
+    }
+
+    .titel div {
+      border: 0px #fff solid;
+      text-align: center;
+      font-size: 10rem;
+    }
+
+    .titelfarbe {
+      animation-name: farbe;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .explo1 {
+      animation-name: explo1;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .explo2 {
+      animation-name: explo2;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .explo3 {
+      animation-name: explo3;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .explo4 {
+      animation-name: explo4;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .explo5 {
+      animation-name: explo5;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .explo6 {
+      animation-name: explo6;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .explo7 {
+      animation-name: explo7;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+
+
+    .raster {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-auto-flow: clumns;
+      width: 60vw;
+      height: 5vh;
+      margin: 45vh 20vw;
+    }
+
+    .raster div {
+      border: 0px #fff solid;
+      text-align: center;
+      font-size: 5em;
+    }
+
+
+
+
+
+
+
+
+
+
+    p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@keyframes farbe {
+  0%   {color: #F6F6F6;}
+  80% {color: #333;}
+  100% {color: red;}
+}
+
+@keyframes explo1 {
+  0%   {transform: translate(0, 0)}
+  80%   {transform: translate(0, 0) rotate(0deg);
+        font-size: 3em;}
+  100% {transform: translate(-20vw, -40vh) rotate(20deg);
+        font-size: 10em;}
+}
+
+@keyframes explo2 {
+  0%   {transform: translate(0, 0)}
+  80%   {transform: translate(0, 0) rotate(0deg);;
+        font-size: 3em;}
+  100% {transform: translate(-20vw, 40vh)  rotate(-20deg);
+        font-size: 10em;}
+}
+
+@keyframes explo3 {
+  0%   {transform: translate(0, 0)}
+  80%   {transform: translate(0, 0) rotate(0deg);;
+        font-size: 3em;}
+  100% {transform: translate(0vw, -40vh)  rotate(5deg);
+        font-size: 10em;}
+}
+
+@keyframes explo4 {
+  0%   {transform: translate(0, 0)}
+  80%   {transform: translate(0, 0) rotate(0deg);;
+        font-size: 3em;}
+  100% {transform: translate(0vw, 40vh)  rotate(5deg);
+        font-size: 10em;}
+}
+
+@keyframes explo5 {
+  0%   {transform: translate(0, 0)}
+  80%   {transform: translate(0, 0) rotate(0deg);;
+        font-size: 3em;}
+  100% {transform: translate(20vw, -35vh)  rotate(-10deg);
+        font-size: 10em;}
+}
+
+@keyframes explo6 {
+  0%   {transform: translate(0, 0)}
+  80%   {transform: translate(0, 0) rotate(0deg);;
+        font-size: 3em;}
+  100% {transform: translate(20vw, 40vh)  rotate(5deg);;
+        font-size: 10em;}
+}
+
+@keyframes explo7 {
+  0%   {transform: translate(0, 0)}
+  80%   {transform: translate(0, 0) rotate(0deg);;
+        font-size: 3em;}
+  100% {transform: translate(40vw, -5vh)  rotate(5deg);;
+        font-size: 10em;}
+}
+
+@keyframes oben {
+  0%   {color: #222;
+        transform: translate(0, -45vw)}
+  20%  {color: #222;
+        font-size: 5em;}
+  60%  {color: yellow;}
+  80%  {color: orange;}
+  100% {color: red;
+        transform: translate(0, 0);
+        font-size: 10em;}
+}
+
+
+
+
+
+
+
+
+  </style>
+  <title>Gridlayout</title>
+</head>
+<body>
+
+  <div class="raster-text">
+    <div></div>
+    <div class="">Fifty thousand on my head, it's disrespect<br>
+      So offended that I had to double check<br>
+      I'ma always take the money over sex<br>
+      That's why they need me out the way<br>
+      What you expect?<br>
+      Got a lot of blood and it's cold<br>
+      They keep tryna get me for my soul<br>
+      Thankful for the women that I know<br>
+      Can't go fifty-fifty with no hoe<br>
+      Every month, I'm supposed to pay her bills<br>
+      And get her what she want<br>
+      I still got like seven years of doin' what I want<br>
+      My dad still got child support from 1991<br>
+      Outta town, people love to pop a lot of shit then come around<br>
+      Word to Flacko Jodye, he done seen us put it down<br>
+    </div>
+    <div></div>
+
+
+  </div>
+
+  <div class="titel">
+    <div class="explo1"><p class="titelfarbe">I'</p></div>
+    <div class="explo2"><p class="titelfarbe">M</p></div>
+    <div class="explo1"> </div>
+    <div class="explo3"><p class="titelfarbe">U</p></div>
+    <div class="explo4"><p class="titelfarbe">P</p></div>
+    <div class="explo5"><p class="titelfarbe">S</p></div>
+    <div class="explo6"><p class="titelfarbe">E</p></div>
+    <div class="explo7"><p class="titelfarbe">T</p></div>
+
+  </div>
+
+
+  <div class="raster-text">
+    <div></div>
+    <div class="">Fifty thousand on my head, it's disrespect<br>
+      So offended that I had to double check<br>
+      I'ma always take the money over sex<br>
+      That's why they need me out the way<br>
+      What you expect?<br>
+      Got a lot of blood and it's cold<br>
+      They keep tryna get me for my soul<br>
+      Thankful for the women that I know<br>
+      Can't go fifty-fifty with no hoe<br>
+      Every month, I'm supposed to pay her bills<br>
+      And get her what she want<br>
+      I still got like seven years of doin' what I want<br>
+      My dad still got child support from 1991<br>
+      Outta town, people love to pop a lot of shit then come around<br>
+      Word to Flacko Jodye, he done seen us put it down<br>
+    </div>
+    <div></div>
+
+
+  </div>
+
+<div class="raster">
+  <div class="top">I'</div>
+  <div class="bottom">M</div>
+  <div class="bottom"></div>
+  <div class="top2">U</div>
+  <div class="bottom2">P</div>
+  <div class="top3">S</div>
+  <div class="bottom3">E</div>
+  <div class="top4">T</div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
